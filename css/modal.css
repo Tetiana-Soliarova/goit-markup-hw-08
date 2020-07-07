@@ -92,7 +92,23 @@
     top: 105px;
     transform: translate(57px 105px);
 }
-
+.mail-input{
+    display: inline-block;
+    border: none;
+    padding: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    background: url(../images/svg-modal.svg#untitled);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 14px;
+  
+}
 
 
 
