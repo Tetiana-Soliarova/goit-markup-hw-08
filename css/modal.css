@@ -1,0 +1,148 @@
+.form{
+    display: block;
+    width: 528px;
+    height: 581px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    padding-top: 8px;
+    padding-right: 8px;
+
+    outline: 2px solid black;
+}
+/*Стилизацыя иконки закрытия*/
+
+.form-button{
+    display: flex;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left:490px;
+    margin-bottom: 2px;
+}
+/*Стилизацыя ссылки*/
+.form-link{
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+    margin-bottom: 30px;
+}
+
+
+
+/*Стилизацыя елементов*/
+.mail-form{
+    display: flex;
+   flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 4px;
+    border: 2px solid red;
+
+
+
+}
+
+.mail-form:hover{
+    color: #2196F3;
+    border: 2px solid blue;
+}
+.mail-form .mail-input{
+  /* padding: 12px 42px; */
+  height: 40px;
+}
+
+.mail-label{
+   position: absolute;
+    left: 47px;
+    top: 12px;
+    opacity: 1;
+    margin-bottom: 4px;
+    border: 1px solid violet;
+
+    
+    
+}
+.mail-label:hover{
+   position: absolute;
+    left: 42px;
+    top: -26px;
+    opacity: 1;
+    margin-bottom: 4px;
+    border: 1px solid violet;
+    
+    
+    
+}
+.mail-label :focus{
+    margin-left: 57px;
+    margin-bottom: 4px;
+    
+}
+.mail-label:active .mail-form,
+.mail-label:hover .mail-form{
+    transform: translateY(-120%);
+    left: 57px;
+    top: 105px;
+    transform: translate(57px 105px);
+}
+
+
+
+
+
+
+/*.mail-label:hover{
+    position: absolute;
+    margin-left: 57px;
+    margin-bottom: 4px;*/
+
+    /*position: absolute;
+    left: 42px;
+    top: 12px;*/
+}
+
+
+
+
+
+
+
+/*Модяльне вікно №"2**
+
+.mail-input{
+    display: inline-block;
+    border: none;
+    padding: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    background: url(../images/проба/проба.png);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 14px;
+  
+}
+
+.mail{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+/*.mail-label{
+    padding-left: 42px;
+    
+}*/
