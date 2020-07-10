@@ -98,7 +98,7 @@
     left: 42px;
     transform: translateY(-50%);
 }
-.form-input:placeholder-shown{
+.form-input :placeholder-shown{
   /*background-color: aqua;*/
   color: #757575;;
 }
@@ -135,7 +135,9 @@
     fill: black; 
   
 }
-.line-form:focus ~ .icon-tel{
+.line-form :focus ~ .icon-people,
+.line-form :focus ~ .icon-mail,
+.line-form :focus ~ .icon-tel{
     fill:#2196F3;
     
 }
