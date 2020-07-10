@@ -311,6 +311,10 @@ header{
     border-radius: 4px;
     
 }
+.ban:focus{
+ outline: none;
+ border: 1px solid #2196F3;
+}
 
 /*Модяльное окно*/
 
