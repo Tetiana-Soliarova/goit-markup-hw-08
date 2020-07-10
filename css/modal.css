@@ -132,9 +132,14 @@
     display: inline-block;
     width: 15px;
     height: 12px;
-    fill: black;  
+    fill: black; 
+  
 }
-..form-input:focus ~ .icon-tel,
+.line-form:focus ~ .icon-tel{
+    fill:#2196F3;
+    
+}
+.form-input:focus>m 
 
 
 
