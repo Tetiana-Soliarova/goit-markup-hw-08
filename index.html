@@ -512,47 +512,52 @@
 <!--Модяльное окно-->
 
 <div data-backdrop class="backdrop is-hidden" data-modal>
-    <form action="" class="form">
-        <button class="form-button" data-modal-close> <img src="./images/./проба/прл.png" alt=""></button>
-        <a href="" class="form-link">Оставьте свои данные, мы вам перезвоним</a>
-    
-        <!--name-form-->
-    
-        <div class="line-form name-form">
-    
-            <input class="form-input name-input" type="text" name="name" id="name">
-            <label class="form-label name-label" for="name">Имя</label>
-        </div>
-    
-    
-        <!--tel-form-->
-        <div class="line-form tel-form">
-    
-            <input class="form-input tel-input" type="tel" name="tel" id="tel">
-            <label for="tel" class="form-label tel-label">Телефон </label>
-        </div>
-    
-    
-        <div class="line-form email-form">
-    
-            <input class="form-input mail-input" type="email" name="email" id="email">
-            <label for="email" class="form-label mail-label">Почта </label>
-        </div>
-    
-    
-        <div class="comment-form">
-    
-            <textarea class="textarea-comment" name="comment" id="comment" rows="10" placeholder="Коментарий"></textarea>
-            <label class="label-comment" for="comment"></label>
-        </div>
-    
-        <div class="form-field">
-            <input type="checkbox" class="form-input" name="hobby" id="books">
-            <label class="form-label" for="books">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>
-        </div>
-    
-        <button type="submit">Отправить</button>
-    </form>
+<form action="" class="form">
+    <button class="form-button" data-modal-close> <img src="../images/modal optimizer/close-black.svg" alt=""></button>
+    <a href="" class="form-link">Оставьте свои данные, мы вам перезвоним</a>
+
+    <!--name-form-->
+
+    <div class="line-form name-form">
+
+        <input class="form-input name-input" type="text" name="name" id="name" placeholder=" ">
+        <label class="form-label name-label" for="name">Имя</label>
+        <svg class="icon-people">
+            <use href="../images/svg-modal.svg#untitled">
+            </use>
+        </svg>
+    </div>
+
+
+    <!--tel-form-->
+    <div class="line-form tel-form">
+
+        <input class="form-input tel-input" type="tel" name="tel" id="tel">
+        <label for="tel" class="form-label tel-label">Телефон </label>
+    </div>
+
+
+    <div class="line-form email-form">
+
+        <input class="form-input mail-input" type="email" name="email" id="email">
+        <label for="email" class="form-label mail-label">Почта </label>
+    </div>
+
+
+    <div class="comment-form">
+
+        <textarea class="textarea-comment" name="comment" id="comment" rows="10" placeholder="Коментарий"></textarea>
+        <label class="label-comment" for="comment"></label>
+    </div>
+
+    <div class="form-field">
+        <input type="checkbox" class="chec-input" name="hobby" id="books">
+        <label class="chec-label" for="books">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>
+    </div>
+
+    <button type="submit">Отправить</button>
+</form>
+</form>
 
 </div>
 <script src="./js/modal.js"></script>
