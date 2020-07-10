@@ -12,24 +12,65 @@
 </html>
 
 <!--Модяльное окно-->
-<form action="" class="form">
-   <button class="form-button"> <img src="./images/./проба/прл.png" alt=""></button>
+<form action="" class="form" >
+   <button class="form-button" data-modal-close> <img src="./images/./проба/прл.png" alt=""></button>
     <a href="" class="form-link">Оставьте свои данные, мы вам перезвоним</a>
 
-    <div class="mail-form">
-        <label for="name" class="name-label">Имя</label>
-        <input class="name-input" type="text" name="name" id="name" >
+ <!--name-form-->
+
+    <div class="line-form name-form">
+        <label 
+            class="label name-label"
+            for="name" >Имя</label>
+        <input 
+            class="input name-input" 
+            type="text" 
+            name="name" 
+            id="name" >
     </div>
-    
-    <div class="mail-form">
-        <label for="tel" class="tel-label">Телефон </label>
-        <input  class="tel-input" type="tel" name="tel" id="tel">
+
+
+    <!--tel-form-->
+    <div class="line-form tel-form">
+        <label 
+            for="tel" 
+            class="label tel-label">Телефон </label>
+        <input  
+            class="input tel-input"
+            type="tel" 
+            name="tel" 
+            id="tel">
     </div>
        
-    <div class="mail-form">
-        <label for="mail" class="mail-label">Почта </label>
-        <input class="mail-input" type="mail" name="mail" id="mail">  
+
+    <div class="line-form email-form">
+        <label for="email" class="label mail-label">Почта </label>
+        <input 
+            class="input mail-input" 
+            type="email" 
+            name="email" 
+            id="email">  
     </div>
+
+
+    <div class="comment-form">
+        <label 
+        class="label-comment"
+        for="comment"></label>
+    <textarea 
+        class="textarea-comment"
+        name="comment" 
+        id="comment" 
+        rows="10" 
+        placeholder="Коментарий"></textarea></div>
+    
+    <div class="form-field">
+        <input type="checkbox" class="form-input" name="hobby"  id="books">
+        <label class="form-label" for="books">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>
+    </div>
+
+    <button type="submit">Отправить</button>
+    </form>
 </form>
 
 
