@@ -512,35 +512,43 @@
 <!--Модяльное окно-->
 
 <div data-backdrop class="backdrop is-hidden" data-modal>
-    <form action="" class="form ">
+    <form action="" class="form">
         <button class="form-button" data-modal-close> <img src="./images/./проба/прл.png" alt=""></button>
-        <a href="" class="form-link" >Оставьте свои данные, мы вам перезвоним</a>
-
+        <a href="" class="form-link">Оставьте свои данные, мы вам перезвоним</a>
+    
+        <!--name-form-->
+    
         <div class="line-form name-form">
-            <label for="name" class="name-label">Имя</label>
-            <input class="name-input" type="text" name="name" id="name">
+            <label class="label name-label" for="name">Имя</label>
+            <input class="input name-input" type="text" name="name" id="name">
         </div>
-
+    
+    
+        <!--tel-form-->
         <div class="line-form tel-form">
-            <label for="tel" class="tel-label">Телефон </label>
-            <input class="tel-input" type="tel" name="tel" id="tel">
+            <label for="tel" class="label tel-label">Телефон </label>
+            <input class="input tel-input" type="tel" name="tel" id="tel">
         </div>
-
+    
+    
         <div class="line-form email-form">
-            <label for="email" class="mail-label">Почта </label>
-            <input class="mail-input" type="email" name="email" id="email">
+            <label for="email" class="label mail-label">Почта </label>
+            <input class="input mail-input" type="email" name="email" id="email">
         </div>
+    
+    
         <div class="comment-form">
-            <label for="comment"></label>
-            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Коментарий"></textarea></div>
-
+            <label class="label-comment" for="comment"></label>
+            <textarea class="textarea-comment" name="comment" id="comment" rows="10" placeholder="Коментарий"></textarea>
+        </div>
+    
         <div class="form-field">
             <input type="checkbox" class="form-input" name="hobby" id="books">
-            <label class="form-label" for="books">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
-            </label>
+            <label class="form-label" for="books">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>
         </div>
-
-        <button type="submit" >Отправить</button>
+    
+        <button type="submit">Отправить</button>
+    </form>
     </form>
 </div>
 <script src="./js/modal.js"></script>
