@@ -13,7 +13,7 @@
 
 <!--Модяльное окно-->
 <form action="" class="form" >
-   <button class="form-button" data-modal-close> <img src="./images/./проба/прл.png" alt=""></button>
+   <button class="form-button" data-modal-close> <img src="../images/modal optimizer/close-black.svg" alt=""></button>
     <a href="" class="form-link">Оставьте свои данные, мы вам перезвоним</a>
 
  <!--name-form-->
@@ -24,10 +24,15 @@
             class="form-input name-input" 
             type="text" 
             name="name" 
-            id="name" >
+            id="name" 
+            placeholder=" ">
         <label 
             class="form-label name-label"
             for="name" >Имя</label>
+        <svg class="icon-people">
+            <use href="../images/svg-modal.svg#untitled">
+            </use>
+        </svg>
     </div>
 
 
@@ -70,8 +75,8 @@
     </div>
     
     <div class="form-field">
-        <input type="checkbox" class="form-input" name="hobby"  id="books">
-        <label class="form-label" for="books">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>
+        <input type="checkbox" class="chec-input" name="hobby"  id="books">
+        <label class="chec-label" for="books">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>
     </div>
 
     <button type="submit">Отправить</button>

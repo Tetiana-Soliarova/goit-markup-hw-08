@@ -47,6 +47,9 @@
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
+.form-button:focus{
+    border: 1px solod royalblue;
+}
 /*Стилизацыя ссылки*/
 .form-link{
     display: flex;
@@ -68,11 +71,11 @@
 .line-form{
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;margin-right:40px;
+    margin-bottom: 20px;margin-right:40px; position: relative;
    /* height: 40px;
     
    
-    /*position: relative;*/
+   */
     /*border-radius: 4px;
     border: 2px solid rgb(9, 71, 33);*/
     
@@ -98,14 +101,44 @@
     background-repeat: no-repeat;
     fill: salmon;
 }
-.form-input:focus + .form-label{
+.form-input:focus{
     outline: none;
     border-color:#2196F3;
 }
-.form-input::placeholder{
-    font-size: 14px;
-    color: #757575;
+/*
+.form-input:focus + .form-label {
+    color: #2196F3;
+    transform: translateY(-230%) translateX(-50%);
+}*/
+.form-input:focus + .form-label,
+.form-input :not(:placeholder-shown ) + .form-label{
+    color: #2196F3;
+    transform: translateY(-230%) translateX(-50%);
+
 }
+.form-label{
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+}
+.form-input:placeholder-shown{
+  background-color: aqua;
+}
+
+.icon-people{
+    position: absolute;
+    top: 50%;
+    left: 42px;
+
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    fill: black;
+    background-color: burlywood;
+}
+
+
 
 
 
