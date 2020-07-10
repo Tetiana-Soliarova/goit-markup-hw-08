@@ -135,11 +135,30 @@
     width: 12px;
     height: 12px;
     fill: black;
-    background-color: burlywood;
+    background-color:#ffffff;
 }
+.icon-tel{
+    position: absolute;
+    top: 14px;
+    left: 18px;
 
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    fill: black;
+    background-color:#ffffff;
+}
+.icon-mail{
+    position: absolute;
+    top: 14px;
+    left: 17px;
 
-
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    fill: black;
+    background-color:#ffffff;
+}
 
 
 
