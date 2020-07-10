@@ -16,12 +16,6 @@
 
 
 .form{
-  /*  position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    display: block;*/
     width: 528px;
     height: 581px;
     margin-top: 221px;
@@ -74,21 +68,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;margin-right:40px; position: relative;
-   /* height: 40px;
-    
-   
-   */
-    /*border-radius: 4px;
-    border: 2px solid rgb(9, 71, 33);*/
-    
 }
-/*.line-form :focus{
-    outline: none;
-}
-.line-form:hover{
-    color: #2196F3;
-    border: 2px solid blue;
-}*/
 
 .form-label{
     margin-bottom: 4px;
@@ -99,19 +79,13 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px; 
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   /* background-image: url(../images/svg-modal.svg#untitled);
-    background-repeat: no-repeat;
-    fill: salmon;*/
+   
 }
 .form-input:focus{
     outline: none;
     border-color:#2196F3;
 }
-/*
-.form-input:focus + .form-label {
-    color: #2196F3;
-    transform: translateY(-230%) translateX(-50%);
-}*/
+
 .form-input:focus + .form-label,
 .form-input :not(:placeholder-shown ) + .form-label{
     color: #2196F3;
@@ -125,7 +99,8 @@
     transform: translateY(-50%);
 }
 .form-input:placeholder-shown{
-  background-color: aqua;
+  /*background-color: aqua;*/
+  color: #757575;;
 }
 
 .icon-people{
@@ -148,8 +123,6 @@
     width: 13px;
     height: 13px;
     fill: black;
-    background-color:#ffffff;
-    color: chocolate;
 }
 .icon-mail{
     position: absolute;
@@ -159,11 +132,9 @@
     display: inline-block;
     width: 15px;
     height: 12px;
-    fill: black;
-  
-    background-color: crimson;
+    fill: black;  
 }
-
+..form-input:focus ~ .icon-tel,
 
 
 
@@ -189,86 +160,3 @@
     outline: none;
     border-color:#2196F3;;
 }
-/*
-.mail-label :focus{
-    margin-left: 57px;
-    margin-bottom: 4px;
-    
-}
-.mail-label:active .mail-form,
-.mail-label:hover .mail-form{
-    transform: translateY(-120%);
-    left: 57px;
-    top: 105px;
-    transform: translate(57px 105px);
-}
-.mail-input{
-    display: inline-block;
-    border: none;
-    padding: 0px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 42px;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.01em;
-    background-image: url(../images/svg-modal.svg#untitled);
-    background-size: 12px 12px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-x: 14px;
-  
-}
-
-
-
-
-
-/*.mail-label:hover{
-    position: absolute;
-    margin-left: 57px;
-    margin-bottom: 4px;*/
-
-    /*position: absolute;
-    left: 42px;
-    top: 12px;
-}*/
-
-
-
-
-
-
-
-/*Модяльне вікно №"2**
-
-.mail-input{
-    display: inline-block;
-    border: none;
-    padding: 0px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 42px;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.01em;
-    background: url(../images/проба/проба.png);
-    background-size: 12px 12px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-x: 14px;
-  
-}
-
-.mail{
-    display: inline-block;
-    width: 100%;
-    height: 40px;
-    margin-top: 20px;
-    border: 1px solid black;
-}
-
-/*.mail-label{
-    padding-left: 42px;
-    
-}*/
