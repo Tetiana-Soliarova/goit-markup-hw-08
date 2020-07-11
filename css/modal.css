@@ -242,7 +242,7 @@
 }
 .checbox:checked ~ .icon-chec {
    /* background-color: palegreen;*/
-
+    border-color: #2196F3;
    background-color: #2196F3;
    background-image: url('../images/svg-modal.svg#icon-check');
    background-size: contain;
