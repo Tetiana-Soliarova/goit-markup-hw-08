@@ -552,17 +552,36 @@
 
 
     <div class=" comment-form">
-        <textarea class="textarea-comment" name="comment" id="comment" rows="10" placeholder=" "></textarea>
+        <textarea 
+            class="textarea-comment"
+            name="comment" 
+            id="comment" 
+            rows="10" 
+            placeholder=" ">
+        </textarea>
         <label class="label-comment" for="comment">Комментарий</label>
     </div>
 
 
-
-
+<!-- CHECKBOX VARIANT 1 z ID-->
+<!--
     <div class="form-field">
-        <input type="checkbox" class="chec-input" name="hobby" id="books">
-        <label class="chec-label" for="books">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>
-    </div>
+        <input type="checkbox" class="checbox" name="topic"  id="css">
+        <label class="checkbox-label" for="css">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>
+    </div>-->
+
+
+     <!-- CHECKBOX VARIANT 2
+    БЕЗ ID, <input> ВКЛАДУЕМО В <label> Удаляемо ID и  for-->
+<label class="checkbox-label" >
+    <input 
+    class="checbox" 
+    type="checkbox" 
+    name="topic"  >
+    Соглашаюсь с рассылкой и принимаю
+    <a href="">Условия договора</a> 
+    <span class="icon-chec"></span>
+</label>
 
     <button class="button-modal" type="submit">Отправить</button>
 

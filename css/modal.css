@@ -216,7 +216,42 @@
 .form-field{
     margin-bottom: 30px;
 }
+/*.checbox{/* вендорні префікси https://autoprefixer.github.io/*/
+   /* -webkit-appearance:none; 
+       -moz-appearance:none;
+            appearance:none;
 
+    position: absolute;
+}*/
+/*.checkbox-label::after {
+    content:'';
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background-color: orange;
+
+}*/
+.icon-chec{
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    /*background-color: plum;*/
+
+    border: 1px solid #2196F3;;
+    border-radius: 2px;
+}
+.checbox:checked ~ .icon-chec {
+   /* background-color: palegreen;*/
+
+   background-color: #2196F3;
+   background-image: url('../images/svg-modal.svg#icon-check');
+   background-size: contain;
+   background-origin: border-box;
+}
+.checkbox-label{
+    display: inline-block;
+    outline: 1px solid red;
+}
 
 /*      */
 
