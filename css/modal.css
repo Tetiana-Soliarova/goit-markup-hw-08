@@ -247,9 +247,10 @@
   /* background-image: url('../images/svg-modal.svg#icon-check');
   /* background-image: url(../images/проба/проба.png');*/
 
-  background-image: url('../images/svg-modal.svg#icon-checet');
+  background-image: url('../images/svg-modall.svg#icon-checet');
    background-size: contain;
    background-origin: border-box;
+   fill: aliceblue;
 }
 .checkbox-label{
     display: inline-block;
