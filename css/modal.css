@@ -241,13 +241,12 @@
     border-radius: 2px;
 }
 .checbox:checked ~ .icon-chec {
-   /* background-color: palegreen;*/
+   
     border-color: #2196F3;
    background-color: #2196F3;
-  /* background-image: url('../images/svg-modal.svg#icon-check');
-  /* background-image: url(../images/проба/проба.png');*/
+  
 
-  background-image: url('../images/svg-modall.svg#icon-checet');
+  background-image: url('../images/checet.svg');
    background-size: contain;
    background-origin: border-box;
    fill: aliceblue;
