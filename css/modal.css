@@ -31,9 +31,7 @@
     padding-top: 8px;
    /* padding-right: 8px;*/
 
-
-   background-color: burlywood;
-    /*background-color: #ffffff;*/
+    background-color: #ffffff;
     outline: 2px solid black;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
         border-radius: 4px;
@@ -45,23 +43,34 @@
 
 
 /*Стилизацыя иконки закрытия*/
-
+.button-win{
+  display:flex;
+  margin-bottom:1px;
+  }
 .form-button{
   display:inline-block;
   margin-top:8px;
   margin-right:8px;
   margin-left: 490px;
-  margin-bottom:1px;
-}
-
-.form-button{
   width:30px;
   height:30px;
   fill: #2196F3;
-  background-color: #757575;
+  padding:0px;
+  background-color:#ffffff;
+
+  border-radius:50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   
   
 }
+.buttom-close{
+  display:inline-block;
+  fill:azure;
+    width: 11px; 
+    height:11px;
+   color:azure;
+}
+
 
 /*.form-button{
     display: flex;
@@ -105,7 +114,7 @@
    /* margin-right: 30px;*/
    margin-left: auto;
    margin-right: auto;
-   margin-top: 40px;
+   /*margin-top: 40px;*/
     margin-bottom: 30px;
     color: #212121;
     text-decoration: none;
@@ -120,8 +129,7 @@
     width: 448px;
    /* min-height: 324px;*/
 
-   background-color: brown;
-
+   
 }
 .line-form{
     display: flex;
@@ -307,9 +315,11 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+    margin-left: 74px;
     color: #757575;
     transition: transform 250ms linear;
 
+    position: relative;
 }
 .checkbox-label a{
     color:#2196F3;
@@ -320,13 +330,27 @@
     width: 16px;
     height: 15px;
 
-    border: 1px solid #2196F3;;
+    border: 1px solid #2196F3;
     border-radius: 2px;
     transition: transform 250ms linear;
+
+
+    position: absolute;
+    top: 4px;
+    left: -25px;
+    margin-right:4px;
 }
 .checbox:checked ~ .icon-chec {
+    display:block;
+    margin-right:4px;
 
-    border-color: #2196F3;
+    position: absolute;
+    top: 4px;
+    left: -25px;
+    width: 16px;
+    height: 15px;
+    border: 1px solid black;
+   border-color: #2196F3;
    background-color: #2196F3;
   background-image: url('../images/checet.svg');
    background-size: contain;
@@ -335,6 +359,87 @@
     transform: scale(1.2);
   
 }
+
+
+
+
+
+/*.checkbox-label::after {
+    content:'';
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background-color: orange;
+
+}*/
+
+/*.checbox{/* вендорні префікси https://autoprefixer.github.io/*/
+  /* -webkit-appearance:none; 
+       -moz-appearance:none;
+            appearance:none;
+
+    position: absolute;*/
+  
+  /*  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-label{
+    display: inline-block;
+   font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin-left: 74px;
+    color: #757575;
+    transition: transform 250ms linear;
+
+    position: relative;
+}
+.checkbox-label a{
+    color:#2196F3;
+    text-decoration:underline;
+}
+.icon-chec{
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+
+    border: 1px solid #2196F3;
+    border-radius: 2px;
+    transition: transform 250ms linear;
+
+
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+.checbox:checked ~ .icon-chec {
+    contain: '';
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 16px;
+    height: 15px;
+    border: 1px solid black;
+   border-color: #2196F3;
+   background-color: #2196F3;
+  background-image: url('../images/checet.svg');
+   background-size: contain;
+   background-origin: border-box;
+   fill: aliceblue;
+    transform: scale(1.2);
+  
+}*/
 
 /*      */
 
