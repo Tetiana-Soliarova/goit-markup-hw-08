@@ -46,8 +46,10 @@
 .button-win{
   display:flex;
   margin-bottom:1px;
+   position: relative;
   }
 .form-button{
+   
   display:inline-block;
   margin-top:8px;
   margin-right:8px;
@@ -64,11 +66,15 @@
   
 }
 .buttom-close{
+    position: absolute;
+    top: 14px;
+    left: 18px;
+
   display:inline-block;
   fill:azure;
     width: 11px; 
     height:11px;
-   color:azure;
+   
 }
 
 
