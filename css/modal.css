@@ -129,11 +129,13 @@
 
 /*Стилизацыя елементов */
 
+
+.buttom-close:hover,
 .buttom-close:focus{
-    fill: brown;
+    fill: #2196F3
 }
 .form-button + .buttom-close:focus{
-    fill: crimson;
+    fill: #2196F3
 }
 .window-form{
     display: block;
