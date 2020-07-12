@@ -67,11 +67,11 @@
 }
 .buttom-close{
     position: absolute;
-    top: 14px;
-    left: 18px;
+    top: 17px;
+    left: 499px;
 
   display:inline-block;
-  fill:azure;
+  fill: black;
     width: 11px; 
     height:11px;
    
@@ -128,6 +128,13 @@
 }
 
 /*Стилизацыя елементов */
+
+.buttom-close:focus{
+    fill: brown;
+}
+.form-button + .buttom-close:focus{
+    fill: crimson;
+}
 .window-form{
     display: block;
     padding: 0px;
