@@ -11,15 +11,11 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
-
 .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
-   visibility: hidden;
-   
+   visibility: hidden;  
 }
-
-
 
 .form{
     width: 528px;
@@ -27,20 +23,13 @@
     margin-top: 221px;
     margin-left: auto;
     margin-right: auto;
-   /* padding: 40px;
-    padding-top: 8px;
-   /* padding-right: 8px;*/
-
+  
     background-color: #ffffff;
     outline: 2px solid black;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-    }
+    border-radius: 4px;
+}
     
-
-
-
-
 
 /*Стилизацыя иконки закрытия*/
 .button-win{
@@ -48,22 +37,18 @@
   margin-bottom:1px;
    position: relative;
   }
-.form-button{
-   
+.form-button{  
   display:inline-block;
   margin-top:8px;
   margin-right:8px;
   margin-left: 490px;
   width:30px;
   height:30px;
-  fill: #2196F3;
+
   padding:0px;
   background-color:#ffffff;
-
   border-radius:50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  
-  
+  border: 1px solid rgba(0, 0, 0, 0.1); 
 }
 .buttom-close{
     position: absolute;
@@ -71,54 +56,15 @@
     left: 499px;
 
   display:inline-block;
-  fill: black;
     width: 11px; 
-    height:11px;
-   
+    height:11px;  
 }
 .form-button:hover{
-    color: red;
-    fill:blanchedalmond;
-    background-color: rgba(0, 0, 0, 0.5);
-    border:1px solid black;
-    cursor: pointer;
-}
-/*.buttom-close:hover,
-.buttom-close:focus{
-    fill: #2196F3
-}
-.form-button + .buttom-close:focus{
-    fill: #2196F3
-}*/
-
-
-/*.form-button{
-    display: flex;
-
-    padding: 10px;
-    border-radius: 50%;
-    margin-left:91%;
-    margin-bottom: 2px;
-    margin-top: 8px;
-    margin-right: 8px;
-    outline: none;
+    fill:#2196F3;
     border: 1px solid rgba(0, 0, 0, 0.1);
-
-
-   /* background-image: url('../images/close-black.svg');
-    background-position: center;*//*
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-
-.form-button:hover{
-    border: 1px solod royalblue;
-    color: blue;
-}
-*/
-
-
-
-
-
 
 
 /*Стилизацыя ссылки*/
@@ -131,33 +77,24 @@
     line-height: 23px;
     justify-content: center;
     letter-spacing: 0.03em;
-   /* margin-right: 30px;*/
    margin-left: auto;
    margin-right: auto;
-   /*margin-top: 40px;*/
     margin-bottom: 30px;
     color: #212121;
     text-decoration: none;
-
 }
 
 /*Стилизацыя елементов */
-
-
 .window-form{
     display: block;
     padding: 0px;
     margin: 40px;
     width: 448px;
-   /* min-height: 324px;*/
-
-   
 }
 .line-form{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-   /* margin-right:0px; */
     width: 100%;
     position: relative;
 
@@ -165,8 +102,7 @@
     line-height: 16px;
     letter-spacing: 0.01em;
 
-    color: #757575;
-    
+    color: #757575;   
 }
 
 .form-label{
@@ -177,8 +113,7 @@
     padding: 12px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px; 
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 .form-input:focus{
     outline: none;
@@ -198,7 +133,6 @@
     transform: translateY(-50%);
 }
 .form-input :placeholder-shown{
-  /*background-color: aqua;*/
   color: #757575;;
 }
 
@@ -246,7 +180,6 @@
 .comment-form{
      display: flex;
     flex-direction: column;
-    /*margin-right:40px;*/
     width: 100%;
     margin-bottom: 20px;
     position: relative;
@@ -264,39 +197,28 @@
     color: #757575;
     transform: translateY(0px);
 }
-/*.textarea-comment{
+
+.label-comment{   
     position: absolute;
     top: 12px;
     left: 16px;
-}*/
-.label-comment{
+
     margin-bottom: 4px;
-
-
-    position: absolute;
-    top: 12px;
-    left: 16px;
-
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.01em;
 
     color: #757575;
-
-
 }
 .textarea-comment:focus{
     outline: none;
     border-color:#2196F3;;
 }
 
-
-
 .textarea-comment:focus + .label-comment,
 .textarea-comment :not(:placeholder-shown ) + .label-comment{
     color: #2196F3;
     transform: translateY(-30px) ;
-
 }  
 
 
@@ -382,87 +304,6 @@
   
 }
 
-
-
-
-
-/*.checkbox-label::after {
-    content:'';
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    background-color: orange;
-
-}*/
-
-/*.checbox{/* вендорні префікси https://autoprefixer.github.io/*/
-  /* -webkit-appearance:none; 
-       -moz-appearance:none;
-            appearance:none;
-
-    position: absolute;*/
-  
-  /*  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.checkbox-label{
-    display: inline-block;
-   font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    margin-left: 74px;
-    color: #757575;
-    transition: transform 250ms linear;
-
-    position: relative;
-}
-.checkbox-label a{
-    color:#2196F3;
-    text-decoration:underline;
-}
-.icon-chec{
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-
-    border: 1px solid #2196F3;
-    border-radius: 2px;
-    transition: transform 250ms linear;
-
-
-    position: absolute;
-    top: 0px;
-    left:0px;
-}
-.checbox:checked ~ .icon-chec {
-    contain: '';
-
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 16px;
-    height: 15px;
-    border: 1px solid black;
-   border-color: #2196F3;
-   background-color: #2196F3;
-  background-image: url('../images/checet.svg');
-   background-size: contain;
-   background-origin: border-box;
-   fill: aliceblue;
-    transform: scale(1.2);
-  
-}*/
-
 /*      */
 
 /*КНОПКА*/
@@ -478,14 +319,22 @@
     margin-top: 30px;
     padding: 10px 56px;
     background-color: #188CE8;
-    /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);*/
     border-radius: 4px;
     border: 1px solid #188CE8;
     color: white;
     cursor: pointer;
 }
 .button-modal:focus{
-    outline: none;
-   
+    outline: none;  
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+
+
+
+
+
+
+
+
+
