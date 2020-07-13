@@ -76,6 +76,20 @@
     height:11px;
    
 }
+.form-button:hover{
+    color: red;
+    fill:blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.5);
+    border:1px solid black;
+    cursor: pointer;
+}
+/*.buttom-close:hover,
+.buttom-close:focus{
+    fill: #2196F3
+}
+.form-button + .buttom-close:focus{
+    fill: #2196F3
+}*/
 
 
 /*.form-button{
@@ -130,13 +144,6 @@
 /*Стилизацыя елементов */
 
 
-.buttom-close:hover,
-.buttom-close:focus{
-    fill: #2196F3
-}
-.form-button + .buttom-close:focus{
-    fill: #2196F3
-}
 .window-form{
     display: block;
     padding: 0px;
