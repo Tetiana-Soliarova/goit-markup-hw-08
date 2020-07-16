@@ -1,0 +1,60 @@
+
+.site-nav {
+    width: 294px;
+    
+    display: flex;
+    padding-left: 0px;
+    margin-top: 32px;
+    margin-bottom: 0px;
+    margin-right: 305px;
+
+&:hover,
+&:focus {
+    color: $accent-color;
+    transition: $timing-function ;
+}
+}
+.site-nav .nav-list.current{
+    color: $accent-color;
+}
+.site-nav a {
+    color: $primery-text-color;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;         
+}
+.navigation{
+    margin-right: 50px;
+    padding-bottom: 32px;
+    height: 48px;
+    
+    position:relative;
+    
+
+    &:hover:after,
+    &:focus:after{
+    content:'';
+    height:4px;
+    width:100%;
+    background-color: $accent-color;
+    bottom:0px;
+    left:0px;
+    position:absolute;
+    border-radius: 2px;
+
+    transition: $timing-function ;
+}
+}
+.contakt{
+    margin-right: 0px;
+    
+}
+.address-information {
+    display: flex;
+    justify-content: flex-end;
+
+    font-style: normal;
+   
+}

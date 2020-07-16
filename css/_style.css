@@ -3,7 +3,7 @@
     --primery-text-color: #212121;
     --title-text-color:  #757575;
     --accent-color: #2196F3;
-    --footer-text-color: rgba(255, 255, 255, 0.4);
+    --accent-color: #2196F3;
    --primery-white-color: #FFFFFF;
 }
 /*/////////////////////////*/
@@ -265,7 +265,7 @@ header{
     background-size: cover;
     background-image: 
          linear-gradient(to right,rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8)),
-         url(../images/Header\ img\ \(оптим\).jpg);
+         url(../images/Header\ .jpg);
     background-color: rgba(47, 48, 58, 0.8);
     margin-left: auto;
     margin-right: auto;
