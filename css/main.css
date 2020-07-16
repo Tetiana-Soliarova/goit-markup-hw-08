@@ -352,10 +352,8 @@ header {
 
 .site-nav:hover, .site-nav:focus {
   color: #2196F3;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .nav-list.current {
@@ -387,10 +385,8 @@ header {
   left: 0px;
   position: absolute;
   border-radius: 2px;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contakt {
@@ -427,18 +423,14 @@ header {
 
 .email-address:active, .email-address:hover, .email-address:focus {
   color: #2196F3;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .email-address:hover, .email-address:focus {
   fill: #2196F3;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-convert {
@@ -472,10 +464,8 @@ header {
 .telefon-adress:hover, .telefon-adress:focus {
   color: #2196F3;
   fill: #2196F3;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-telefon {
@@ -551,5 +541,136 @@ header {
 .ban:focus {
   outline: none;
   border: 1px solid #2196F3;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 94px;
+  padding-top: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.no-padding-top {
+  padding-top: 0px;
+}
+
+.tasks {
+  color: rgba(0, 0, 0, 0);
+  display: none;
+  margin: 0px;
+}
+
+.container-task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.container-task:not(:last-child) {
+  margin-right: 0px;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.general {
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  bottom: 0;
+}
+
+.name-tasks {
+  font-family: Roboto, sans-serif;
+  line-height: 1.14;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.link {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  margin: 0px;
+  margin-right: 30px;
+}
+
+.no-margin {
+  margin-right: 0px;
+}
+
+.section-page {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  height: 42px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.company-activity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1170px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0 auto;
+}
+
+.img {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 30px;
+}
+
+.image {
+  margin-right: 0px;
+}
+
+.merger {
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+.section-title {
+  color: .section-title primery-text-color;
+  line-height: 1.14;
+  font-size: 14px;
+  margin: 0px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
 }
 /*# sourceMappingURL=main.css.map */

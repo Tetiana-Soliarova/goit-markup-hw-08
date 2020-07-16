@@ -370,13 +370,13 @@ header{
     justify-content: center;
     align-items: center;
  }  
- .icon-astronaut{
+ .general{
      width: 70px;
      height: 70px;
      padding: 0;
      bottom: 0; 
  }
- .icon-clock{
+ /*.icon-clock{
      width: 70px;
      height: 70px;
      padding: 0;
@@ -395,7 +395,7 @@ header{
      bottom: 0;
      
      
- }
+ }*/
 
 .name-tasks {
     font-family: Roboto, sans-serif;
