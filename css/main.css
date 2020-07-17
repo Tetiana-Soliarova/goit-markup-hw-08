@@ -658,7 +658,7 @@ header {
 }
 
 .section-title {
-  color: .section-title primery-text-color;
+  color: #212121;
   line-height: 1.14;
   font-size: 14px;
   margin: 0px;
@@ -672,5 +672,107 @@ header {
   position: absolute;
   bottom: 2px;
   left: 0px;
+}
+
+.section-employees-company {
+  background-color: #F5F4FA;
+}
+
+.section-employees {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.employees {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.employees-profession {
+  color: #757575;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.employees-company {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.team-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.card {
+  text-align: center;
+  width: 270px;
+  margin-right: 30px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.last {
+  margin-right: 0px;
+}
+
+.messenger {
+  display: inline-block;
+}
+
+.messenger-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0px 0px 0px 0px;
+  margin-bottom: 24px;
+}
+
+.mesenger-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  margin: 10px;
+  padding: 0px;
+  border-radius: 50%;
+  fill: #AFB1B8;
+}
+
+.mesenger-icon:hover, .mesenger-icon:focus {
+  background-color: #2196F3;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #FFFFFF;
+}
+
+.icon-facebook,
+.icon-instagram,
+.icon-telegram,
+.icon-linkedin {
+  width: 20px;
+  height: 20px;
+  padding: 0;
 }
 /*# sourceMappingURL=main.css.map */
