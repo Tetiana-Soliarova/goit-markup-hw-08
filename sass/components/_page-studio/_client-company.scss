@@ -15,7 +15,7 @@
     padding-left: 0px;
     padding-bottom: 0px;
 
-$-name{
+&-name{
     margin-right: 30px;
 }
 }
@@ -38,8 +38,8 @@ $-name{
     padding:0px;
     fill: #afb1b8;
 
-    $:hover,
-    $:focus{
+&:hover,
+&:focus{
     border-color: $accent-color;
     transition: $timing-values;
     fill: $accent-color;
