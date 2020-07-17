@@ -1,0 +1,204 @@
+footer {   
+    background-color:#2F303A;
+}
+
+.logo-white{
+    color: $primery-white-color;
+    font-family: $secondary-font-family;
+    line-height: 1.19;
+    font-weight: 700;
+    font-size: 26px;
+}
+.container-footer{
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+}
+
+.footer-logo{
+    width: 153px;
+    padding-top: 45px;
+    margin-bottom: 8px;
+    margin-right: 147px;
+}
+
+.footer-address{
+    width: 231px;  
+    margin-top: 0px;
+    margin-right: 69px;
+    margin-bottom: 28px;
+    padding-top: 0px;
+    
+
+}
+.address-list{
+    color: $primery-white-color;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 9px;
+}
+
+b {
+    color: $primery-white-color;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.address-dan {
+    color: $footer-secondary-color;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    margin-top: 0px; 
+&:hover,
+&:focus{
+    color: $accent-color;
+    transition: $timing-values;
+}    
+}
+
+
+
+.email{ 
+   display: inline-block;
+   margin-bottom: 9px;
+}
+
+address p {
+    color: $footer-text-color;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+}
+
+/**/
+.footer-content{
+    margin-top: 57px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 206px;
+    height: 80px;
+
+}
+
+.block-footer{
+    display: flex;
+    padding: 0px;
+    margin-top: 20px;
+
+}
+
+.footer-icon{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 0px;
+    margin-right: 10px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    fill: $primery-white-color;
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+
+
+&:hover,
+&:focus{
+    background-color: $accent-color;
+    transition: $timing-values 250ms;
+}    
+}
+
+.footer-meseg{
+    width: 20px;
+    height: 20px;
+    padding: 0; 
+}
+
+
+
+/**/
+.footer-ligns{
+    margin-top: 57px;
+    margin-bottom: 50px;
+    padding-right: 0px;
+    margin-left: 94px;
+} 
+
+.bloc{
+    width: 1200px;
+    height: 1px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color:$footer-text-color;
+    
+}
+
+.close{
+    color: $footer-text-color;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 0px;
+    padding-bottom: 21px;
+
+}
+
+/**/
+.rassilka{
+    margin-bottom: 20px;
+    padding: 0px;
+}
+.footer-ligns{
+    display:block;
+}
+.fleks-button{
+    display: flex;
+    margin-top:20px;
+}
+
+.vstavka-label{
+    margin-right:12px;
+}
+.vstavka-inpyt{
+  outline:none;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 358px;
+    padding-left: 16px;
+    padding-top:15px;
+    padding-bottom: 15px;
+ background-color: rgba(0, 0, 0, 0.0);
+
+&:focus,
+&:hover{
+  border: 1px solid $accent-color;
+  color: $footer-secondary-color;
+} 
+}
+
+.vstavka-inpyt::placeholder{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;   
+letter-spacing: 0.03em;
+color: $footer-secondary-color;
+
+}
+
+
+
+
+
+
+
+
