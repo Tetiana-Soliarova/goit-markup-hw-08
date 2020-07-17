@@ -54,13 +54,13 @@
 
 .messenger{
     display: inline-block; 
-
-&-list{
+}
+.mesenger-list{
     display: inline-flex;
     padding: 0px 0px 0px 0px;
     margin-bottom:24px;
 }    
-}
+
 .mesenger-icon{
     display: flex;
     justify-content: center;
