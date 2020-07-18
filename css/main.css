@@ -292,6 +292,18 @@ ul {
   list-style-type: none;
 }
 
+.icon, .mesenger-icon, .clients-log, .button-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -578,21 +590,12 @@ header {
 }
 
 .icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 270px;
   height: 120px;
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: #F5F4FA;
   border-radius: 4px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .general {
@@ -742,15 +745,6 @@ header {
 }
 
 .mesenger-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 44px;
   height: 44px;
   margin: 10px;
@@ -805,19 +799,10 @@ header {
 }
 
 .clients-log {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 170px;
   height: 90px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-size: contain;
   margin: 0px;
   padding: 0px;
@@ -1641,13 +1626,6 @@ address p {
 }
 
 .button-modal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
   letter-spacing: 0.06em;
   font-size: 16px;
   width: 200px;

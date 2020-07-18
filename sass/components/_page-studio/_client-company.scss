@@ -25,14 +25,12 @@
     padding-right: 0px;
 }
 .clients-log{
-    display: flex;
+    @extend %flex-center;
     width: 170px;
     height: 90px;
     
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    justify-content: center;
-    align-items: center;
     background-size: contain;
     margin:0px;
     padding:0px;
