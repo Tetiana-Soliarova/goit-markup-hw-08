@@ -21,13 +21,28 @@
 <header >
     <div class="header-list">
         <nav class="container-nav">
+           
             <!--Логотип-->
             <div class="header-nav">
                 <a href="" class="logo-text"> <span class="logo">Web</span>  Studio</a>
             </div>
-                
-            
+             <!--menu-->   
+             <button 
+                type="button" 
+                class="menu-button is-open" 
+                aria-expanded="false" 
+                aria-controls="menu-container"
+                data-menu-button>
+                <svg 
+                    width="40px"
+                    height="40px"
+                    aria-label="Переключатель мобильного меню">
+                    <use class="icon-cross" href="./images/close.svg"></use>
+                    <use  class="icon-menu" href="./images/menu.svg"></use>
+                </svg>
+            </button>
                 <!--Навигация на другие страницы-->
+            <div class="menu-container" id="menu-container" data-menu>Menu</div>
             <div class="header-nav">
                 <ul class="site-nav">
 
@@ -69,6 +84,9 @@
                    </div>
                     
                 </address> 
+
+              
+
        </nav>
     </div>
 </header>
@@ -89,54 +107,59 @@
 <!--Задачи компании-->
 
 <section class="section-one">
-    <div class="container ">
+    <div class="container">
         <h2 class="tasks">Задачі</h2>
         <ul class="container-task">
-            <li class="image-icon">
-               <!-- <img src="images/Rectangle3.svg" alt="пустой блок" width="270"  class="image">-->
-               <div class="icon ">
-                   <svg class="general icon-antenna">
-                       <use href="./images/symbol-defs.svg#icon-antenna"></use>
-                   </svg>
-               </div>
-                <h3 class="name-tasks"> ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-                <p class="link">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-            </li>  
-        
-            <li>
-                <!--<img src="images/Rectangle3.svg" alt="пустой блок" width="270"  class="image">-->
-                <div class="icon ">
-                    <svg class="general icon-clock">
-                        <use href="./images/symbol-defs.svg#icon-clock"></use>
-                    </svg>
 
-                </div>
-                <h3 class="name-tasks"> ПУНКТУАЛЬНОСТЬ</h3>
-                <p class="link">  Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-            </li> 
-        
-            <li>
-             <!--<img src="images/Rectangle3.svg" alt="пустой блок" width="270" class="image">-->
-                <div class="icon ">
-                    <svg class="general icon-diagram">
-                        <use href="./images/symbol-defs.svg#icon-diagram"></use>
-                    </svg>
+
+       
+                <li class="image-icon">
+                    <!-- <img src="images/Rectangle3.svg" alt="пустой блок" width="270"  class="image">-->
+                    <div class="icon ">
+                        <svg class="general icon-antenna">
+                            <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                        </svg>
+                    </div>
+                    <h3 class="name-tasks"> ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                    <p class="link">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                </li>
+            
+
+                <li class="image-icon">
+                    <!--<img src="images/Rectangle3.svg" alt="пустой блок" width="270"  class="image">-->
+                    <div class="icon ">
+                        <svg class="general icon-clock">
+                            <use href="./images/symbol-defs.svg#icon-clock"></use>
+                        </svg>
                 
-                </div>
-                <h3 class="name-tasks"> ПЛАНИРОВАНИЕ</h3>
-                <p class="link">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-            </li>
-        
-            <li>
-                <!--<img src="images/Rectangle3.svg" alt="пустой блок" width="270" class="image">-->
-                <div class="icon ">
-                    <svg class="general icon-astronaut">
-                        <use href="./images/symbol-defs.svg#icon-astronaut"></use>
-                    </svg>
-                </div>
-                <h3 class="name-tasks"> СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-                <p class="link no-margin"> Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-            </li>
+                    </div>
+                    <h3 class="name-tasks"> ПУНКТУАЛЬНОСТЬ</h3>
+                    <p class="link"> Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                </li>
+            
+                <li class="image-icon"> 
+                    <!--<img src="images/Rectangle3.svg" alt="пустой блок" width="270" class="image">-->
+                    <div class="icon ">
+                        <svg class="general icon-diagram">
+                            <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                        </svg>
+                
+                    </div>
+                    <h3 class="name-tasks"> ПЛАНИРОВАНИЕ</h3>
+                    <p class="link">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                </li>
+            
+                <li class="image-icon">
+                    <!--<img src="images/Rectangle3.svg" alt="пустой блок" width="270" class="image">-->
+                    <div class="icon ">
+                        <svg class="general icon-astronaut">
+                            <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                        </svg>
+                    </div>
+                    <h3 class="name-tasks"> СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+                    <p class="link no-margin"> Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                </li>
+            
         </ul>
     </div>
 </section>
@@ -146,7 +169,7 @@
 
 <!--Деятельность компании-->
 
-<section class="">
+<section class="section-activity">
     <div class="container no-padding-top">
         <h2 class="section-page">Чем мы занимаемся</h2>
 

@@ -1,12 +1,31 @@
 
 .site-nav {
-    width: 294px;
-    
-    display: flex;
     padding-left: 0px;
+     margin-top: 32px;
+    margin-bottom: 0px;
+   /* display: flex;*/
+    /*padding-left: 0px;
     margin-top: 32px;
     margin-bottom: 0px;
+    margin-right: 305px;*/
+
+    @media screen and (min-width:480px) {
+    display: none;
+   background-color: rebeccapurple;
+    } 
+      
+    @media screen and (min-width:768px) {
+    display: flex;
+    background-color: salmon;
+    } 
+    
+    @media screen and (min-width:1200px) {   
+    background-color: red;
+    display: flex;
+    width: 294px; 
     margin-right: 305px;
+    
+    } 
 
 &:hover,
 &:focus {

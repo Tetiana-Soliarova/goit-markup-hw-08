@@ -4,13 +4,16 @@
 
 @import "./components/joint-data";
 @import "./utils/placeholder";
+@import "./utils/_breakpoint.scss";
+
 @import "./components/_page-header/general";
 @import "./components/logo";
+@import "./components/_page-header/button-menu";
 @import "./components/_page-header/nav-list";
 @import "./components/_page-header/contact";
 @import "./components/_page-header/banner";
 
-@import "./components/_page-studio/tasks-company";
+@import "./components/_page-studio/tasks-companys";
 @import "./components/_page-studio/activity-company";
 @import "./components/_page-studio/employees-company";
 @import "./components/_page-studio/client-company";
