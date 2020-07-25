@@ -3,38 +3,78 @@
     line-height: 1.16;
     text-align: center;
 
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     margin-top: 0px;
+
+@media screen and(min-width: 1200px){
+    margin-bottom: 35px;}
+
 }
 
 
 .client{
+    /*display: flex;
+    width: 1170px;*/
     display: flex;
-    width: 1170px;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px;
     padding-left: 0px;
     padding-bottom: 0px;
+@media screen and(min-width: 480px){
+   /* display: flex;
+    flex-wrap: wrap;*/
+    flex-basis: calc((100%-4*15px)/2);
+}
+@media screen and(min-width: 768px){
+    /*display: flex;
+    flex-wrap: wrap;*/
+    flex-basis: calc((100%-6*15px)/3);
+}
+/* @media screen and(min-width: 1200px){
+    display: flex;
+    flex-wrap: wrap;
+   
+}*/
+    
 
-&-name{
+
+/*&-name{
     margin-right: 30px;
+}*/
 }
-}
-
+/*.client-name{
+    display: flex;
+     flex-wrap: wrap;
+    
+    margin: 0px 15px;
+ 
+}*/
 .client-name:last-child{   
     margin-right: 0px;
     padding-right: 0px;
 }
 .clients-log{
     @extend %flex-center;
-    width: 170px;
+    width: 210px;
     height: 90px;
     
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     background-size: contain;
-    margin:0px;
+   /* margin:0px;*/
+   margin: 15px;
     padding:0px;
     fill: #afb1b8;
+@media screen and(min-width:768px){
+    width: 226px;
+   /* margin: 15px;*/
+    
+}
+@media screen and(min-width:1200px){
+    width: 170px;
+    
+}
 
 &:hover,
 &:focus{

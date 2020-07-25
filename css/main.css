@@ -628,7 +628,7 @@ header {
   letter-spacing: 0.06em;
   display: inline-block;
   padding: 10px 32px;
-  min-width: 136px;
+  width: 136px;
   text-align: center;
   margin-bottom: 200px;
   margin-top: 40px;
@@ -638,8 +638,8 @@ header {
 }
 
 .ban-page {
-  /*  max-width: 1600px;
-    min-height: 600px;*/
+  max-width: 1600px;
+  max-height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -664,8 +664,11 @@ header {
 .container {
   /* width: 1200px;*/
   margin: 0 auto;
+  width: 100%;
   /* padding-left: 15px;
     padding-right: 15px;*/
+  padding-bottom: 45px;
+  padding-top: 45px;
   background-color: #343447;
 }
 
@@ -697,32 +700,6 @@ header {
   color: rgba(0, 0, 0, 0);
   display: none;
   margin: 0px;
-}
-
-.image-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 15px;
-  /* margin-right: 0px;*/
-}
-
-@media screen and (min-width: 768px) {
-  .image-icon {
-    /*width: 354px;*/
-    /*padding: 15px;*/
-    /*margin: 15px;*/
-    width: calc((100% - 4 * 15px) / 2);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .image-icon {
-    width: 270px;
-    padding-right: 0px;
-  }
 }
 
 .container-task {
@@ -757,6 +734,32 @@ header {
 
 .container-task:not(:last-child) {
   margin-right: 0px;
+}
+
+.image-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px 15px;
+  /* margin-right: 0px;*/
+}
+
+@media screen and (min-width: 768px) {
+  .image-icon {
+    /*width: 354px;*/
+    /*padding: 15px;*/
+    /*margin: 15px;*/
+    width: calc((100% - 4 * 15px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image-icon {
+    width: 270px;
+    padding-right: 0px;
+  }
 }
 
 .icon {
@@ -794,6 +797,15 @@ header {
   font-size: 14px;
   margin-top: 0px;
   margin-bottom: 10px;
+  /*   
+@media screen and (max-width:768px){
+    display: inline-block;
+       text-align: center; 
+      align-items: center;
+       justify-content: center;
+       
+      
+    }*/
 }
 
 .link {
@@ -834,7 +846,7 @@ header {
     }
     
 }*/
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .section-activity {
     display: none;
   }
@@ -946,23 +958,61 @@ header {
 }
 
 .team-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: auto;
+  /* display: flex;*/
   padding-left: 0px;
   margin-top: 0px;
   margin-left: 0px;
   margin-bottom: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .team-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc((100%-4*15px)/2);
+        flex-basis: calc((100%-4*15px)/2);
+    /* margin-top: 0px;
+    margin-bottom: 0px;*/
+    margin: 0px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-card {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
 .card {
   text-align: center;
-  width: 270px;
-  margin-right: 30px;
+  /*  width: 270px;
+    margin-right: 30px;*/
+  width: 450px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    /*width: 354px;*/
+    /*padding: 15px;*/
+    /*margin: 15px;*/
+    width: calc((100% - 4 * 15px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 270px;
+    padding-right: 0px;
+  }
 }
 
 .last {
@@ -982,7 +1032,7 @@ header {
 }
 
 .mesenger-icon {
-  width: 44px;
+  max-width: 44px;
   height: 44px;
   margin: 10px;
   padding: 0px;
@@ -1012,38 +1062,91 @@ header {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   margin-top: 0px;
 }
 
+@media screen and (min-width: 1200px) {
+  .customers-title {
+    margin-bottom: 35px;
+  }
+}
+
 .client {
+  /*display: flex;
+    width: 1170px;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1170px;
-  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 0px;
   padding-left: 0px;
   padding-bottom: 0px;
+  /* @media screen and(min-width: 1200px){
+    display: flex;
+    flex-wrap: wrap;
+   
+}*/
+  /*&-name{
+    margin-right: 30px;
+}*/
 }
 
-.client-name {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .client {
+    /* display: flex;
+    flex-wrap: wrap;*/
+    -ms-flex-preferred-size: calc((100%-4*15px)/2);
+        flex-basis: calc((100%-4*15px)/2);
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .client {
+    /*display: flex;
+    flex-wrap: wrap;*/
+    -ms-flex-preferred-size: calc((100%-6*15px)/3);
+        flex-basis: calc((100%-6*15px)/3);
+  }
+}
+
+/*.client-name{
+    display: flex;
+     flex-wrap: wrap;
+    
+    margin: 0px 15px;
+ 
+}*/
 .client-name:last-child {
   margin-right: 0px;
   padding-right: 0px;
 }
 
 .clients-log {
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   background-size: contain;
-  margin: 0px;
+  /* margin:0px;*/
+  margin: 15px;
   padding: 0px;
   fill: #afb1b8;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-log {
+    width: 226px;
+    /* margin: 15px;*/
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-log {
+    width: 170px;
+  }
 }
 
 .clients-log:hover, .clients-log:focus {
