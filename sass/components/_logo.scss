@@ -1,20 +1,39 @@
+
 .logo {
     color: $accent-color;
     
 &-text {
-   width: 153px;
-   margin-top: 24px;
-   margin-bottom: 25px;
-    margin-right: 85px;
+    width: 141px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  /*  margin-right: 269px;*/
+
+    margin-right: 81px;
     color: #000000;
     font-family: $secondary-font-family;
     line-height: 1.19;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
 
     display: inline-block;
     }
-    }
+ } 
+ @media screen and (min-width:768px ){
+    .logo-text{
+    width: 141px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    font-size: 24px;
+}
+} 
+ @media screen and (min-width:1200px){
+    .logo-text{
+    width: 153px;
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-right: 85px;
     
-   
+    font-size: 26px;
+    }
+    }  
     

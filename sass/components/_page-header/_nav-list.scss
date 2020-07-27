@@ -1,32 +1,23 @@
 
 .site-nav {
+    
     padding-left: 0px;
-     margin-top: 32px;
-    margin-bottom: 0px;
-   /* display: flex;*/
-    /*padding-left: 0px;
     margin-top: 32px;
     margin-bottom: 0px;
-    margin-right: 305px;*/
-
-    @media screen and (min-width:480px) {
-    display: none;
-   background-color: rebeccapurple;
-    } 
-      
-    @media screen and (min-width:768px) {
-    display: flex;
-    background-color: salmon;
-    } 
-    
-    @media screen and (min-width:1200px) {   
-    background-color: red;
-    display: flex;
-    width: 294px; 
-    margin-right: 305px;
-    
-    } 
-
+   /* display: flex;
+   margin-right: 305px;*/
+@media screen and (max-width:767px) {
+        display: block;
+        text-align: center;
+    }
+ @media screen and (min-width:768px) {
+        display: flex;
+        margin-right: auto;
+    }
+@media screen and (min-width:1200px) {
+        display: flex;
+        margin-right: 305px;
+    }
 &:hover,
 &:focus {
     color: $accent-color;
@@ -47,13 +38,13 @@
 .navigation{
     margin-right: 50px;
     padding-bottom: 32px;
-    height: 48px;
+   height: 48px;
     
     position:relative;
     
 
-    &:hover:after,
-    &:focus:after{
+&:hover:after,
+&:focus:after{
     content:'';
     height:4px;
     width:100%;
@@ -70,10 +61,4 @@
     margin-right: 0px;
     
 }
-.address-information {
-    display: flex;
-    justify-content: flex-end;
 
-    font-style: normal;
-   
-}
