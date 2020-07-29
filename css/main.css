@@ -315,6 +315,64 @@ ul {
           align-items: center;
 }
 
+.ban-page {
+  background-color: rgba(47, 48, 58, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .ban-page {
+    width: 480px;
+    height: 400px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero-mobile-480-400.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-mobile-480-400.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .ban-page {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero-mobile-480-400@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-mobile-480-400@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ban-page {
+    width: 768px;
+    height: 400px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero-tablet-768-400.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-tablet-768-400.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .ban-page {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero-tablet-768-400@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-tablet-768-400@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .ban-page {
+    width: 1600px;
+    height: 600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero-desctop-1600-600.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-desctop-1600-600.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .ban-page {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero-desctop-1600-600@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-desctop-1600-600@2x.jpg);
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -761,14 +819,27 @@ header {
 .page-title {
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   color: #FFFFFF;
   /* width: 696px;*/
   text-align: center;
   margin: 0px auto;
-  padding-top: 200px;
+}
+
+@media screen and (max-width: 1199px) {
+  .page-title {
+    font-size: 26px;
+    line-height: 1.61;
+    padding-top: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-title {
+    font-size: 44px;
+    line-height: 1.36;
+    padding-top: 200px;
+  }
 }
 
 .ban {
@@ -781,27 +852,13 @@ header {
   letter-spacing: 0.06em;
   display: inline-block;
   padding: 10px 32px;
-  width: 136px;
+  /*width: 136px;*/
   text-align: center;
   margin-bottom: 200px;
   margin-top: 40px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.ban-page {
-  max-width: 1600px;
-  max-height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header.jpg);
-  background-color: rgba(47, 48, 58, 0.8);
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
 }
 
 .ban:focus {
@@ -1024,18 +1081,6 @@ header {
   margin-bottom: 50px;
 }
 
-.company-activity {
-  padding-left: 0px;
-  padding-right: 0px;
-  /* margin: 0 auto;*/
-}
-
-@media screen and (min-width: 480px) {
-  .company-activity {
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .company-activity {
     display: -webkit-box;
@@ -1043,7 +1088,10 @@ header {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    /* width: 1170px;*/
+    width: 1170px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px auto;
   }
 }
 
@@ -1394,15 +1442,13 @@ footer {
 
 .container-footer {
   max-width: 1200px;
-  /*!!!!!!*/
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   display: block;
-  /*!!!!!!display: flex;*/
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .container-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1410,7 +1456,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .item {
     width: 232px;
     display: block;
@@ -1423,8 +1469,20 @@ footer {
 .footer-logo {
   width: 153px;
   padding-top: 45px;
-  margin-bottom: 8px;
-  margin-right: 147px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    margin-right: 147px;
+  }
 }
 
 .footer-address {
@@ -1485,9 +1543,15 @@ address p {
 .footer-content {
   margin-top: 57px;
   margin-bottom: 0px;
-  margin-left: 0px;
   width: 206px;
   height: 80px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .block-footer {
@@ -1536,8 +1600,21 @@ address p {
 .footer-ligns {
   margin-top: 57px;
   margin-bottom: 50px;
-  padding-right: 0px;
-  margin-left: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-ligns {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-ligns {
+    padding-right: 0px;
+    margin-left: 94px;
+  }
 }
 
 .bloc {
@@ -1558,9 +1635,25 @@ address p {
 }
 
 /**/
+@media screen and (min-width: 768px) {
+  .tablet-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .rassilka {
   margin-bottom: 20px;
   padding: 0px;
+}
+
+@media screen and (max-width: 1199px) {
+  .rassilka {
+    margin-left: 116px;
+  }
 }
 
 .footer-ligns {
@@ -1568,10 +1661,23 @@ address p {
 }
 
 .fleks-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .fleks-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fleks-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+  }
 }
 
 .vstavka-label {
@@ -1591,6 +1697,12 @@ address p {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 1199px) {
+  .vstavka-inpyt {
+    margin-bottom: 20px;
+  }
 }
 
 .vstavka-inpyt:focus, .vstavka-inpyt:hover {
@@ -1634,6 +1746,12 @@ address p {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width: 1199px) {
+  .menu-meseger {
+    margin-left: 30px;
+  }
+}
+
 .button-footer {
   width: 200px;
   height: 50px;
@@ -1651,6 +1769,13 @@ address p {
           justify-content: center;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1199px) {
+  .button-footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .button-footer:hover, .button-footer:focus {

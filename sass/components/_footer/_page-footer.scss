@@ -8,20 +8,21 @@ footer {
     line-height: 1.19;
     font-weight: 700;
     font-size: 26px;
+
 }
 .container-footer{
-    max-width: 1200px; /*!!!!!!*/
+    max-width: 1200px; 
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;   
-    display: block; /*!!!!!!display: flex;*/
+    display: block; 
 
-@media screen and (min-width:768px){
+@media screen and (min-width:1200px){
     display: flex;
 }
 }
 .item{
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:1199px) {
         width: 232px;
         display: block;
         margin-left: auto;
@@ -32,8 +33,14 @@ footer {
 .footer-logo{
     width: 153px;
     padding-top: 45px;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
+ @media screen and (max-width:1199px){
+    margin-left: auto;
+    margin-right: auto;
+}
+ @media screen and (min-width:1200px){ 
     margin-right: 147px;
+} 
 }
 
 .footer-address{
@@ -93,17 +100,20 @@ address p {
 .footer-content{
     margin-top: 57px;
     margin-bottom: 0px;
-    margin-left: 0px;
     width: 206px;
     height: 80px;
-
+@media screen and (max-width:1199px){
+    margin-left: auto;
+    margin-right: auto;
+    
+    }
+    
 }
 
 .block-footer{
     display: flex;
     padding: 0px;
     margin-top: 20px;
-
 }
 
 .footer-icon{
@@ -139,8 +149,15 @@ address p {
 .footer-ligns{
     margin-top: 57px;
     margin-bottom: 50px;
+@media screen and (max-width:1199px){
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width:1200px){
     padding-right: 0px;
     margin-left: 94px;
+}
 } 
 
 .bloc{
@@ -163,20 +180,46 @@ address p {
 }
 
 /**/
+.tablet-flex{
+   @media screen and (min-width:768px) {
+       display: flex;
+      justify-content: space-around;
+       
+   }
+}
+
+
+
 .rassilka{
     margin-bottom: 20px;
-    padding: 0px;
+     padding: 0px; 
+@media screen and (max-width:1199px){
+     margin-left: 116px;
+      
+    
+}
 }
 .footer-ligns{
     display:block;
 }
 .fleks-button{
+    text-align: center;
+@media screen and (max-width:1199px){
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ @media screen and (min-width:1200px){
     display: flex;
     margin-top:20px;
+        
+    }
+    
 }
 
 .vstavka-label{
     margin-right:12px;
+
+
 }
 .vstavka-inpyt{
   outline:none;
@@ -189,6 +232,10 @@ address p {
     padding-top:15px;
     padding-bottom: 15px;
  background-color: rgba(0, 0, 0, 0.0);
+ 
+ @media screen and (max-width:1199px){
+    margin-bottom: 20px;
+}
 
 &:focus,
 &:hover{
@@ -207,10 +254,13 @@ color: $footer-secondary-color;
 
 }
 
+@media screen and(max-width:1199px){
+.menu-meseger{
+    margin-left: 30px;
+}
 
 
-
-
+}
 
 
 

@@ -2,14 +2,25 @@
 .page-title{
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    
+    
     letter-spacing: 0.06em;
     color: $primery-white-color;
    /* width: 696px;*/
     text-align: center;
     margin: 0px auto;
-   padding-top: 200px;
+   
+
+@media screen and (max-width:1199px){
+    font-size: 26px;
+     line-height: 1.61; 
+     padding-top: 118px; 
+   }
+@media screen and (min-width:1200px){
+      font-size: 44px; 
+       line-height: 1.36;
+       padding-top: 200px;
+   }
 }
 
 
@@ -25,30 +36,17 @@
     
     display: inline-block;
    padding: 10px 32px;
-    width: 136px;
+    /*width: 136px;*/
     text-align: center;
     margin-bottom: 200px;
   margin-top: 40px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-
-&-page{
-    max-width: 1600px;
-    max-height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: linear-gradient(to right,$bg-color,$bg-color),
-        url(../images/Header.jpg)  ;
-
-    background-color: $bg-color;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  
-} 
+ 
 &:focus{
  outline: none;
  border: 1px solid $accent-color;
 } 
 }
+
+

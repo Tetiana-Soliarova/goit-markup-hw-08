@@ -18,17 +18,14 @@
 }
 
 .company-activity{
-    padding-left: 0px;
-    padding-right: 0px;
-   /* margin: 0 auto;*/
-    @media screen and (min-width:480px) {
-        width: 100%;
-}
+   
     @media screen and (min-width:1200px) {
    display: flex;
    flex-wrap: wrap;
-   /* width: 1170px;*/
-    
+    width: 1170px;
+     padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px auto;
     }
 }
 
