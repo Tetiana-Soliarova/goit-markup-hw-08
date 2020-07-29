@@ -16,7 +16,13 @@ body{
    font-style: normal;
    letter-spacing: 0.03em;
    margin: 0 auto;
-   padding-top: 80px;
+ @media screen and (max-width:767px){
+        padding-top: 60px;    
+    }
+@media screen and (min-width:768px) {
+       padding-top: 80px; 
+    } 
+   
 }
 h1, h2, h3 {
     font-family: $font-family;

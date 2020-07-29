@@ -8,23 +8,27 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 80px;
     outline: $line;
-   
+  width: 100%;
+  @media screen and (max-width:767px) {
+    height: 60px;
+    max-width: 480px;
+  }  
+  @media screen and (min-width:768px) {  
+        height: 80px;
+        width: 100%;
+    }
     
 
 }
-/*.page-header{
-    
-}*/
+
 .header-list {
     max-width: 1200px;
    
     padding-left: 15px;
     padding-right: 15px;
 
-    
+  
 
 @media screen and (min-width:480px) {
     min-width: 480px;

@@ -10,13 +10,25 @@ footer {
     font-size: 26px;
 }
 .container-footer{
-    width: 1200px;
+    max-width: 1200px; /*!!!!!!*/
     margin: 0 auto;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px;   
+    display: block; /*!!!!!!display: flex;*/
+
+@media screen and (min-width:768px){
     display: flex;
 }
-
+}
+.item{
+    @media screen and (max-width:767px) {
+        width: 232px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
 .footer-logo{
     width: 153px;
     padding-top: 45px;
