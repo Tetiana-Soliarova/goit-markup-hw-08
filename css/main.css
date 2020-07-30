@@ -1855,7 +1855,7 @@ address p {
 
 @media screen and (max-width: 767px) {
   .section-portfolio {
-    min-width: 480px;
+    max-width: 480px;
   }
 }
 
@@ -1931,6 +1931,12 @@ address p {
   margin-right: 8px;
   border: 0px;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-button {
+    margin-bottom: 15px;
+  }
 }
 
 .one {
@@ -2051,7 +2057,7 @@ address p {
 
 @media screen and (max-width: 767px) {
   .tabl-image {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
@@ -2076,7 +2082,7 @@ address p {
 
 @media screen and (max-width: 767px) {
   .content-item {
-    width: 450px;
+    max-width: 450px;
     margin-right: 0px;
   }
   .content-item:nth-last-child(-n+1) {

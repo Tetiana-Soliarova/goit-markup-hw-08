@@ -6,7 +6,7 @@
     margin: 0px auto;
 
 @media screen and (max-width:767px){
-    min-width: 480px;
+    max-width: 480px;
 }
 @media screen and (min-width:768px){
     min-width: 768px;
@@ -58,7 +58,10 @@
     margin-right: 8px;
     border: 0px;
     border-radius: 4px;
-    
+ 
+@media screen and (max-width:767px){
+    margin-bottom: 15px;
+}
   
 }
 .one{
