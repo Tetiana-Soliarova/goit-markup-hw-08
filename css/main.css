@@ -2045,6 +2045,10 @@ address p {
   }
 }
 
+.tabl-image {
+  height: 294px;
+}
+
 @media screen and (max-width: 767px) {
   .tabl-image {
     width: 450px;
