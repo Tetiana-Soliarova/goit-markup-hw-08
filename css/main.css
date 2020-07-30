@@ -625,6 +625,13 @@ header {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .navigation {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .navigation:hover:after, .navigation:focus:after {
   content: '';
   height: 4px;
@@ -640,6 +647,13 @@ header {
 
 .contakt {
   margin-right: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .contakt {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .address-information {

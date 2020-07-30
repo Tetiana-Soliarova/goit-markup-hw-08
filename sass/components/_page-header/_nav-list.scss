@@ -41,7 +41,10 @@
    height: 48px;
     
     position:relative;
-    
+@media screen and(max-width:767px){
+      margin-right: auto;
+      margin-left: auto;
+    }    
 
 &:hover:after,
 &:focus:after{
@@ -58,7 +61,12 @@
 }
 }
 .contakt{
-    margin-right: 0px;
+   margin-right: 0px;   
+@media screen and(max-width:767px){
+      margin-right: auto;
+      margin-left: auto;
+    }  
     
+   
 }
 
