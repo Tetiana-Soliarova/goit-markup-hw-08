@@ -482,6 +482,7 @@ header {
 @media screen and (min-width: 1200px) {
   .logo-text {
     width: 153px;
+    height: 31px;
     margin-top: 24px;
     margin-bottom: 25px;
     margin-right: 85px;
@@ -699,9 +700,10 @@ header {
 
 @media screen and (min-width: 1200px) {
   .item-mailo {
-    margin-right: 30px;
+    /* margin-right: 30px;*/
     margin-top: 32px;
     margin-bottom: 32px;
+    margin-left: 0px;
   }
 }
 
@@ -766,6 +768,7 @@ header {
     margin-right: 0px;
     margin-top: 32px;
     margin-bottom: 32px;
+    margin-left: 0px;
   }
 }
 
