@@ -327,7 +327,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .ban-page {
-    width: 480px;
+    max-width: 480px;
     height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero-mobile-480-400.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-mobile-480-400.jpg);
@@ -343,7 +343,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .ban-page {
-    width: 768px;
+    min-width: 768px;
     height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero-tablet-768-400.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-tablet-768-400.jpg);
@@ -359,7 +359,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .ban-page {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero-desctop-1600-600.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-desctop-1600-600.jpg);
@@ -389,22 +389,22 @@ header {
 
 @media screen and (max-width: 767px) {
   header {
-    height: 60px;
-    max-width: 480px;
+    max-height: 60px;
+    /* width:100%;*/
   }
 }
 
 @media screen and (min-width: 768px) {
   header {
     height: 80px;
-    width: 100%;
+    /*width: 100%;*/
   }
 }
 
 .header-list {
-  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 480px;
 }
 
 @media screen and (min-width: 480px) {
@@ -422,8 +422,9 @@ header {
 
 @media screen and (min-width: 1200px) {
   .header-list {
-    min-width: 1200px;
+    width: 1170px;
     margin: 0 auto;
+    height: 80px;
   }
 }
 
@@ -431,10 +432,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.container-nav-a {
-  color: 0;
+  /* &-a{
+        color: red($color: #000000);
+    }*/
 }
 
 .logo {
@@ -638,7 +638,6 @@ header {
     margin-right: auto;
     margin-bottom: 60px;
     margin-top: 60px;
-    outline: 1px solid red;
   }
 }
 
@@ -651,6 +650,7 @@ header {
 
 @media screen and (min-width: 1200px) {
   .address-information {
+    width: 353px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -823,7 +823,8 @@ header {
   color: #FFFFFF;
   /* width: 696px;*/
   text-align: center;
-  margin: 0px auto;
+  margin: 0px 0px;
+  /*auto*/
 }
 
 @media screen and (max-width: 1199px) {
@@ -879,7 +880,7 @@ header {
     padding-right: 15px;*/
   padding-bottom: 45px;
   padding-top: 45px;
-  background-color: #343447;
+  /* background-color:rgb(52, 52, 71);*/
 }
 
 @media screen and (min-width: 480px) {
@@ -1196,7 +1197,8 @@ header {
 
 @media screen and (min-width: 768px) {
   .foto-card {
-    width: 354px;
+    width: 100%;
+    /***354*/
   }
 }
 
@@ -1208,7 +1210,7 @@ header {
 
 .card {
   text-align: center;
-  width: 450px;
+  max-width: 450px;
   margin: 15px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -1618,7 +1620,7 @@ address p {
 }
 
 .bloc {
-  width: 1200px;
+  max-width: 1200px;
   height: 1px;
   margin: 0 auto;
   padding-left: 15px;
@@ -1991,8 +1993,8 @@ address p {
 }
 
 .form {
-  width: 528px;
-  height: 581px;
+  max-width: 528px;
+  min-height: 581px;
   margin-top: 221px;
   margin-left: auto;
   margin-right: auto;
