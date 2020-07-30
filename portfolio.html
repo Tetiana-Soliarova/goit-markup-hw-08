@@ -14,7 +14,7 @@
 <body>
     
      <!--Шапка страницы-->
-<header >
+<header class="page-header">
     <div class="header-list">
         <nav class="container-nav">
             <!--Логотип-->
@@ -22,18 +22,37 @@
                 <a href="./index.html" class="logo-text"> <span class="logo">Web</span>  Studio</a>
             </div>
                 
-            
+            <!--menu-->
+            <button class="menu-button is-open" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                <!--<svg  
+                                aria-label="Переключатель мобильного меню">
+                                <use class="icon-cross" href="./images/close.svg"></use>
+                                <use  class="icon-menu" href="./images/menu.svg"></use>
+                            </svg>-->
+                <img width="40px" height="40px" src="./images/close.svg" alt="" aria-label="Переключатель мобильного меню">
+                <img src="./images/menu.svg" alt="">
+            </button>
                 <!--Навигация на другие страницы-->
-            <div class="header-nav">
-                <ul class="site-nav">
-                    <li class="navigation"><a href="./index.html" class="nav-list">Студия</a></li>
-                     <li class="navigation"><a href="portfolio.html" class="nav-list current" >Портфолио</a></li>
-                     <li class="navigation contakt"> <a href="" class="nav-list">Контакты</a></li>
-                 </ul>
-            </div>
+            <div class="menu-container" id="menu-container" data-menu>
+                <div class="navigation-menu header-nav">
+                    <ul class="site-nav">
+            
+                        <li class="navigation ">
+                            <a href="" class="nav-list current">Студия</a>
+                        </li>
+            
+                        <li class="navigation ">
+                            <a href="portfolio.html" class="nav-list ">Портфолио</a>
+                        </li>
+            
+                        <li class="navigation contakt ">
+                            <a href="" class="nav-list ">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             
             <!--Контактная информация-->
-                <address class="address-title">
+                <address class="contacs-menu address-title">
                     <div class="address-information">
                 
                         <div class="item-mailo">
@@ -56,6 +75,7 @@
                     </div>
                 
                 </address>
+            </div>
        </nav>
     </div>
 </header>
@@ -100,7 +120,12 @@
                 <a href="" class="cocon">
             
                     <div class="project-block">
-                        <img src="./images/project1.jpg" alt="" width="370">
+                        <img 
+                        class="tabl-image" 
+                        srcset="
+                         ./images/desk-tehnocrak.jpg 1x,
+                        ./images/desk-tehnocrak@2x.jpg 2x
+                        " src="./images/desk-tehnocrak.jpg" alt="foto">
             
                         <div class="project-text">
                             <p class="project description"> Технокряк это современная площадка распространения
@@ -119,7 +144,14 @@
                 <li class="content-item">
                      <a href="">
                         <div class="project-block">
-                        <img src="./images/project2.jpg" alt="" width="370">
+                        
+                            <img 
+                            class="tabl-image" 
+                            srcset="
+                            ./images/tabl-Poster-Golden-Star.jpg 1x,
+                            ./images/tabl-Poster-Golden-Star@2x.jpg 2x
+                            " src="./images/tabl-Poster-Golden-Star.jpg" alt="foto">
+
                         <div class="project-text">
                             <p class="project description"> Технокряк это современная площадка распространения
                                 коронавируса.
@@ -137,7 +169,13 @@
                 <li class="content-item">
                     <a href="">
                         <div class="project-block">
-                            <img src="images/project3.jpg" alt="" width="370">
+                            <img 
+                            class="tabl-image" 
+                            srcset="
+                                 ./images/tabl-restaurant-Seafood.jpg 1x,
+                                ./images/tabl-restaurant-Seafood@2x.jpg 2x
+                                 " src="./images/tabl-restaurant-Seafood.jpg" 
+                                 alt="foto">
                             <div class="project-text">
                                 <p class="project description"> Технокряк это современная площадка распространения
                                     коронавируса.
@@ -155,7 +193,15 @@
                 <li class="content-item">
                     <a href="">
                         <div class="project-block">
-                            <img src="images/project4.jpg" alt="" width="370">
+                            <img 
+                            class="tabl-image" 
+                            srcset="
+                                ./images/tabl-Project-Prime.jpg 1x,
+                                ./images/tabl-Project-Prime@2x.jpg 2x
+                                " src="./images/tabl-Project-Prime.jpg" 
+                                alt="foto">
+
+
                             <div class="project-text">
                                 <p class="project description"> Технокряк это современная площадка распространения
                                     коронавируса.
@@ -173,7 +219,15 @@
                 <li class="content-item">
                     <a href="">
                     <div class="project-block">
-                        <img src="images/project5.jpg" alt="" width="370">
+
+                        <img 
+                        class="tabl-image"
+                        srcset="
+                            ./images/tabl-Project-Boxes.jpg 1x,
+                             ./images/tabl-Project-Boxes@2x.jpg 2x
+                            " src="./images/tabl-Project-Boxes.jpg"
+                            alt="foto">
+
                         <div class="project-text">
                             <p class="project description"> Технокряк это современная площадка распространения
                                 коронавируса.
@@ -191,7 +245,14 @@
                 <li class="content-item">
                     <a href="">
                         <div class="project-block">
-                            <img src="images/project6.jpg" alt="" width="370">
+
+                            <img 
+                            class="tabl-image" 
+                            srcset="
+                             ./images/tabl-Inspiration-has-no-Borders.jpg 1x,
+                            ./images/tabl-Inspiration-has-no-Borders@2x.jpg 2x
+                             " src="./images/tabl-Inspiration-has-no-Borders.jpg" alt="foto">
+
                             <div class="project-text">
                                 <p class="project description"> Технокряк это современная площадка распространения
                                     коронавируса.
@@ -209,7 +270,13 @@
                 <li class="content-item">
                     <a href="">
                         <div class="project-block">
-                           <img src="./images/project7.jpg" alt="" width="370">
+                        <img 
+                        class="tabl-image" 
+                        srcset="
+                            ./images/tabl-Edition-Limited-Edition.jpg 1x,
+                            ./images/tabl-Edition-Limited-Edition@2x.jpg 2x
+                          " src="./images/tabl-Edition-Limited-Edition.jpg" alt="foto">
+
                             <div class="project-text">
                                 <p class="project description"> Технокряк это современная площадка распространения
                                     коронавируса.
@@ -227,7 +294,12 @@
                 <li class="content-item">
                     <a href="">
                         <div class="project-block">
-                            <img src="images/project8.jpg" alt="" width="370px">
+                            <img 
+                            class="tabl-image"
+                            srcset="
+                                ./images/tabl-Project-LAB.jpg 1x,
+                             ./images/tabl-Project-LAB@2x.jpg 2x
+                             " src="./images/tabl-Project-LAB.jpg" alt="foto">
                             <div class="project-text">
                                 <p class="project description"> Технокряк это современная площадка распространения
                                     коронавируса.
@@ -245,7 +317,12 @@
                 <li class="content-item">
                     <a href="">
                         <div class="project-block">
-                            <img src="images/project9.jpg" alt="" width="370">
+                            <img 
+                            class="tabl-image" 
+                            srcset="
+                             ./images/tabl-Growing-Business.jpg 1x,
+                            ./images/tabl-Growing-Business@2x.jpg 2x
+                            " src="./images/tabl-Growing-Business.jpg" alt="foto">
                             <div class="project-text">
                                 <p class="project description"> Технокряк это современная площадка распространения
                                     коронавируса.
