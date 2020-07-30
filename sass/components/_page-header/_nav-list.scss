@@ -44,6 +44,7 @@
 @media screen and(max-width:767px){
       margin-right: auto;
       margin-left: auto;
+      width: 66px;
     }    
 
 &:hover:after,
@@ -58,6 +59,7 @@
     border-radius: 2px;
 
     transition:  $timing-function;
+   
 }
 }
 .contakt{
@@ -69,4 +71,8 @@
     
    
 }
-
+.nav-list .current{
+    @media screen and(max-width:767px){
+        width: 66px;
+    }
+}
