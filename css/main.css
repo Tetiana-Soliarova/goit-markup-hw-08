@@ -747,9 +747,14 @@ header {
   display: -ms-flexbox;
   display: flex;
   padding: 0px;
-  width: 161px;
   height: 16px;
   fill: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .email-address {
+    width: 161px;
+  }
 }
 
 .email-address:active, .email-address:hover, .email-address:focus {
