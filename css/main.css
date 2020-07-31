@@ -570,9 +570,13 @@ header {
   height: 40px;
 }
 
-.icon-menu :hover,
-.icon-menu :active {
+.icon-menu :hover {
   fill: #2196F3;
+}
+
+.icon-cross-menu {
+  fill: #2196F3;
+  color: 0;
 }
 
 .site-nav {
