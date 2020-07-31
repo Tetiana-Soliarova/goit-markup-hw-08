@@ -30,16 +30,18 @@
 }
 .buttom-close{
     position: absolute;
-    top: 17px;
-    left: 421px;
+    right: 18px;    
+    top: 18px;
+    left: auto;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+   
+    /*left: 421px;*/
 
-  display:inline-block;
-    width: 11px; 
-    height:11px; 
 
- @media screen and(max-width:479px){
-     margin-left: auto;
- } 
+ 
+ 
  @media screen and(min-width:1200px){
      left: 499px;
  } 
