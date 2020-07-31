@@ -15,7 +15,9 @@
   background-color:$primery-white-color;
   border-radius:50%;
   border: 1px solid rgba(0, 0, 0, 0.1); 
-
+@media screen and(max-width:479px){
+     margin-left: auto;
+ }
  @media screen and(min-width:1200px){
      margin-left: 490px;
  }  
@@ -70,27 +72,30 @@
 /*Стилизацыя елементов */
 .window-form{
     display: block;
-    width: 370px;
+   /* width: 370px;*/
+   
+   max-width: 370px;
     margin: 40px;
     margin-bottom: 20px;
     margin-top: 0px;
  @media screen and(min-width:1200px){
      padding: 0px;
-    width: 448px;
+    max-width: 448px;
  }   
 }
 .line-form{
     display: flex;
-    flex-direction: column;
+    
     margin-bottom: 20px;
     width: 100%;
     position: relative;
-
+ flex-direction: column;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.01em;
 
     color: $title-text-color;   
+    
 }
 
 
@@ -169,10 +174,15 @@
 /*Стилизацыя comment*/
 .comment-form{
      display: flex;
-    flex-direction: column;
-    width: 100%;
+     flex-direction: column; 
+    max-width: 100%;
+
     margin-bottom: 20px;
     position: relative;
+    @media screen and (min-width:480px){
+      width: 100%;
+        
+    }
 }
 .comment-form .textarea-comment{
     resize: vertical;

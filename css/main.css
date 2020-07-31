@@ -2259,6 +2259,12 @@ address p {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 479px) {
+  .form-button {
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .form-button {
     margin-left: 490px;
@@ -2322,7 +2328,8 @@ address p {
 /*Стилизацыя елементов */
 .window-form {
   display: block;
-  width: 370px;
+  /* width: 370px;*/
+  max-width: 370px;
   margin: 40px;
   margin-bottom: 20px;
   margin-top: 0px;
@@ -2331,7 +2338,7 @@ address p {
 @media screen and (min-width: 1200px) {
   .window-form {
     padding: 0px;
-    width: 448px;
+    max-width: 448px;
   }
 }
 
@@ -2339,13 +2346,13 @@ address p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 20px;
-  width: 100%;
-  position: relative;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.01em;
@@ -2433,9 +2440,15 @@ address p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 20px;
   position: relative;
+}
+
+@media screen and (min-width: 480px) {
+  .comment-form {
+    width: 100%;
+  }
 }
 
 .comment-form .textarea-comment {
