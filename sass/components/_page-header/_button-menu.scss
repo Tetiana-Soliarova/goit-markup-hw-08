@@ -16,7 +16,6 @@
     
     border: none;
     background-color: transparent;
-    outline: 1px solid tomato;
     position:absolute;
     top:0;
     right:0;
@@ -59,6 +58,7 @@
 }
 .menu-button.is-open .icon-cross{
     display: block;
+    
 }
 .menu-button.is-open .icon-menu{
     display: none;
@@ -66,3 +66,11 @@
 
 
 
+.icon-cross-menu{
+    width: 40px;
+    height: 40px;
+}
+.icon-menu :hover,
+.icon-menu :active{
+    fill: #2196F3;
+}
