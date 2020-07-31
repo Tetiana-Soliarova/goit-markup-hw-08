@@ -5,8 +5,10 @@
     display: inline-flex;
     margin: 10px;
     margin-right: 15px;
+    margin-left:269px;
+
     /*padding: 0px;
-    margin-left: 270px;
+    
    /* flex-wrap: wrap;
      justify-content: flex-end;
     height: 40px;*/
@@ -73,8 +75,8 @@
 .icon-menu :hover{
     fill: #2196F3;
 }
-.icon-cross-menu :hover,
-.icon-cross-menu :focus{
+.icon-cross-menu:focus,
+.icon-cross-menu:hover{
     fill: #2196F3;
   
 }
