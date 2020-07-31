@@ -151,7 +151,7 @@ address p {
     margin-bottom: 50px;
     
 @media screen and (max-width:479px){
-    width: 400px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -198,11 +198,12 @@ address p {
 
 
 .rassilka{
+    display: block;
     margin-bottom: 20px;
      padding: 0px; 
 @media screen and (max-width:1199px){
-     margin-left: 116px;
-      
+    /* margin-left: 116px;*/
+      text-align: center;
     
 }
 }
@@ -225,7 +226,7 @@ address p {
 
 .vstavka-label{
     margin-right:12px;
-
+   
 
 }
 .vstavka-inpyt{
@@ -234,12 +235,15 @@ address p {
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    widows: 300px;
+   /* width: 300px;*/
     padding-left: 16px;
     padding-top:15px;
     padding-bottom: 15px;
  background-color: rgba(0, 0, 0, 0.0);
- 
+ @media screen and (max-width:479px){
+    width: 100%;
+    margin-bottom: 20px;
+ }
  @media screen and (min-width:480px){
     width: 450px;
     margin-bottom: 20px;
