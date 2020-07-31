@@ -7,7 +7,7 @@
   display:inline-block;
   margin-top:8px;
   margin-right:8px;
-  margin-left: 490px;
+  margin-left: 412px;
   width:30px;
   height:30px;
 
@@ -15,8 +15,9 @@
   background-color:$primery-white-color;
   border-radius:50%;
   border: 1px solid rgba(0, 0, 0, 0.1); 
-@media screen and(max-width:767px){
-     margin-left: 412px;
+
+ @media screen and(min-width:1200px){
+     margin-left: 490px;
  }  
 &:hover{
     fill:$accent-color;
@@ -45,35 +46,36 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+   
+   margin-left: 40px;
+        margin-right: 40px;
+        line-height: 30px;
+     text-align: center;   
     justify-content: center;
     letter-spacing: 0.03em;
-   margin-left: auto;
-   margin-right: auto;
     margin-bottom: 30px;
     color:$primery-text-color;
     text-decoration: none;
-@media screen and(max-width:767px){
-        margin-left: 40px;
-        margin-right: 40px;
-        line-height: 30px;
+
+@media screen and(min-width:1200px){
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 23px;
         text-align: center;
     }
-
 }
 
 /*Стилизацыя елементов */
 .window-form{
     display: block;
-    padding: 0px;
+    width: 370px;
     margin: 40px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+ @media screen and(min-width:1200px){
+     padding: 0px;
     width: 448px;
-
-    @media screen and(max-width:767px){
-        width: 370px;
-        margin-bottom: 20px;
-        margin-top: 0px;
-    }
+ }   
 }
 .line-form{
     display: flex;
@@ -120,7 +122,7 @@
     top: 50%;
     left: 42px;
     transform: translateY(-50%);
-    margin-bottom: 4px;
+   /* margin-bottom: 4px;*/
 }
 .icon-people{
     position: absolute;
@@ -236,8 +238,8 @@
    font-family: $font-family;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+   font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     margin-left: 74px;
     color: $title-text-color;
@@ -245,10 +247,9 @@
 
     position: relative;
 
- @media screen and (max-width:767px){
-     font-size: 12px;
-    line-height: 14px;
-     
+ @media screen and (min-width:1200px){
+      font-size: 14px;
+     line-height: 24px;
  }   
 }
 .checkbox-label a{
