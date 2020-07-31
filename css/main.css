@@ -2288,6 +2288,12 @@ address p {
   height: 11px;
 }
 
+@media screen and (max-width: 479px) {
+  .buttom-close {
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .buttom-close {
     left: 499px;
