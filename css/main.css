@@ -2340,6 +2340,13 @@ address p {
 @media screen and (min-width: 1200px) {
   .window-form {
     padding: 0px;
+    min-width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .window-form {
+    padding: 0px;
     max-width: 448px;
   }
 }
