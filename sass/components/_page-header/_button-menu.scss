@@ -73,7 +73,8 @@
 .icon-menu :hover{
     fill: #2196F3;
 }
-.icon-cross-menu:hover{
+.icon-cross-menu :hover,
+.icon-cross-menu :focus{
     fill: #2196F3;
-    color: red($color: #000000);
+  
 }
