@@ -4,7 +4,7 @@
    position: relative;
   }
 .form-button{  
-  display:inline-block;
+  display:block;
   margin-top:8px;
   margin-right:8px;
   margin-left: 412px;
@@ -86,7 +86,7 @@
     margin-top: 0px;
 @media screen and(min-width:1200px){
      padding: 0px;
-     
+
     min-width: 370px;
  }   
  @media screen and(min-width:1200px){
@@ -125,7 +125,7 @@
 
 
 .form-input:focus + .form-label,
-.form-input :not(:placeholder-shown ) + .form-label{
+.form-input:not(:placeholder-shown ) + .form-label{
     color: $accent-color;
     transform: translateY(-230%) translateX(-50%);
 

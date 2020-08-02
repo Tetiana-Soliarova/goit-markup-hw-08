@@ -325,7 +325,7 @@ ul {
   background-size: cover;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .ban-page {
     max-width: 480px;
     height: 400px;
@@ -334,7 +334,23 @@ ul {
   }
 }
 
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 192dpi), screen and (max-width: 479px) and (min-resolution: 2dppx) {
+  .ban-page {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero-mobile-480-400@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-mobile-480-400@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .ban-page {
+    min-width: 480px;
+    height: 400px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero-mobile-480-400.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-mobile-480-400.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .ban-page {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero-mobile-480-400@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-mobile-480-400@2x.jpg);
@@ -2247,7 +2263,7 @@ address p {
 }
 
 .form-button {
-  display: inline-block;
+  display: block;
   margin-top: 8px;
   margin-right: 8px;
   margin-left: 412px;
@@ -2384,7 +2400,7 @@ address p {
 }
 
 .form-input:focus + .form-label,
-.form-input :not(:placeholder-shown) + .form-label {
+.form-input:not(:placeholder-shown) + .form-label {
   color: #2196F3;
   -webkit-transform: translateY(-230%) translateX(-50%);
           transform: translateY(-230%) translateX(-50%);
